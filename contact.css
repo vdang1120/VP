@@ -218,7 +218,7 @@ form button:hover {
 .was-validated .customerStatus input:invalid ~ .empty-feedback {
     display: block;
     position: relative;
-    right: 95px;
+    right: 80px;
     top: 28px;
 }
 
