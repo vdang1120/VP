@@ -1,0 +1,52 @@
+.top {
+    font-size: 32px;
+    font-weight: 600;
+    padding: 40px;
+    border-bottom: 1px solid lightgrey;
+    background-color: mediumseagreen;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 10%;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    height: 400px;
+}
+
+.section img {
+    width: 100%;
+    height: 100%;
+}
+
+.left, .right {
+    flex: 1;
+    padding: 5%;
+}
+
+.title  h1{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.title2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    padding: 4%;
+    border-bottom: 1px solid lightgray;
+}
+
+.sect2 .left {
+    display: flex;
+    justify-content: center;
+}
+
+.sect2 .left img {
+    height: 300px;
+    width: auto;
+}

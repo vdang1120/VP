@@ -1,0 +1,158 @@
+
+
+.sect1 {
+    height: 550px;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url('./images/doctor.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1; /* Put the image behind the gradient */
+}
+
+.textBox {
+    margin-left: 20%;
+}
+
+.textBox p {
+    margin: 0;
+    color: black;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+.sect1 img {
+    height: 300px;
+    margin-top: 100px;
+}
+
+.sect2 {
+    box-sizing: border-box;
+    min-height: 500px;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addressFlexBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+iframe, .storeHours {
+    border: solid mediumseagreen;
+    border-radius: 8px;
+}
+
+.storeHours {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.hoursTitle {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.hoursBox {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.days, .hours {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.days {
+    text-align: end;
+}
+
+.footer {
+    background-color: darkgray;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+@media(max-width: 512px){
+    iframe, .storeHours {
+        width: 325px;
+        height: 195px;
+    }
+    .days, .hours {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 375px){
+    iframe, .storeHours {
+        width: 275px;
+        height: 165px;
+    }
+}
+
+.smallSect {
+    box-sizing: border-box;
+    background-color: mediumseagreen;
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.smallSect img {
+    height: 18px;
+}
+
+.smallAddress, .smallPhone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.smallPhone a, .smallAddress a {
+    color: white;
+    text-decoration: none;
+}
+
+.smallPhone a:hover, .smallAddress a:hover {
+    text-decoration: underline;
+}
