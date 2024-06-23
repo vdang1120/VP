@@ -8,27 +8,33 @@
     padding: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 main {
     margin-top: 80px;
-    /* Add margin to offset the fixed header height */
+    max-width: 2000px;
+    width: 100%;
 }
 
 header {
     background-color: white;
     position: fixed;
-    /* Fix the header to the top */
     width: 100%;
-    /* Ensure it takes the full width of the viewport */
     top: 0;
-    /* Position it at the top of the viewport */
     transition: box-shadow .3s ease-in-out;
+    z-index: 1000;
 }
 
 .scrolled {
     box-shadow: 0px -10px 20px black;
 }
 
-header *, footer * {
+header *,
+footer * {
     font-family: "Open Sans", sans-serif;
 }
 
@@ -74,7 +80,7 @@ nav ul li {
 
 nav ul li a {
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     text-decoration: none;
     padding: 0 30px;
@@ -85,7 +91,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    font-size: 28px;
+    font-size: 23px;
     color: mediumseagreen;
 
 }
@@ -127,19 +133,19 @@ nav ul li a:hover {
 }
 
 .dropdownProducts li a {
-    font-size: 16px;
+    font-size: 18px;
     padding: 15px;
 }
 
 .dropdownProducts li a:hover {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .contactButton button {
     padding: 10px;
     font-size: 16px;
     font-weight: 600;
-    border: 3px solid mediumseagreen;
+    border: solid mediumseagreen;
     border-radius: 8px;
     color: mediumseagreen;
     background-color: transparent;
@@ -176,15 +182,63 @@ nav ul li a:hover {
     font-weight: 400;
 }
 
+.top {
+    font-size: 32px;
+    padding: 40px;
+    background-color: mediumseagreen;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 10%;
+}
+
+.smallSect {
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: mediumseagreen;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.smallSect img {
+    height: 18px;
+}
+
+.smallAddress,
+.smallPhone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.smallPhone a,
+.smallAddress a {
+    color: white;
+    text-decoration: none;
+}
+
+.smallPhone a:hover,
+.smallAddress a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    width: 100%;
+}
+
 .footer {
     background-color: darkgray;
     height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px;
-    margin: 0px;
+    gap: 7px;
     font-size: 14px;
+    text-align: center;
 }
 
 .footer a {
@@ -248,15 +302,23 @@ nav ul li a:hover {
 
 }
 
-@media(max-width: 450px) {
+@media(max-width: 515px) {
+    .smallSect {
+        gap: 20px;
+    }
+}
+
+@media(max-width: 500px) {
     .logo {
         height: 50px;
     }
+
     .contactButton button {
-        padding: 6px;
-        font-size: 12px;
+        padding: 8px;
+        font-size: 14px;
     }
+
     .openImg {
-        width: 32px;
+        width: 30px;
     }
 }

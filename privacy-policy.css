@@ -1,0 +1,9 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid lightgray;
+    gap: 20px;
+    padding: 5%;
+    padding-left: 10%;
+}

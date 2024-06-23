@@ -26,7 +26,7 @@
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./aboutus.html">About Us</a></li>
-                <li><a href="#glasses2">Idk</a></li>
+                <li><a href="./insurance.html">Insurance</a></li>
                 <li id="products">
                     <a href="#" onclick="return false;">Products</a>
                     <ul class="dropdownProducts">
@@ -71,22 +71,15 @@
                                 <li>Phone Number: (817) 375-9000</li>
                             </ul>
                         </li>
-                        <li class="mainListBox">
-                            <div class="mainListItem">
-                                <img src="./images/emailIcon.png"><span class="mainListText">By Email</span>
-                            </div>
-                            <ul class="notMainList">
-                                <li>Email Address: vision.palace@yahoo.com</li>
-                            </ul>
-                        </li>
                     </ul>
                 </div>
             </div>
             <div class="right">
                 <p>Contact Us</p>
-                <form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation" novalidate>
+                <form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation"
+                    novalidate>
                     <input type="hidden" name="access_key" value="09f823d5-e229-4cf9-91a9-5a17951e2602">
-                    
+
                     <div class="name">
                         <div class="first error">
                             <input type="text" id="first-name" name="First Name" placeholder="First Name" required>
@@ -107,7 +100,8 @@
                         <div class="empty-feedback invalid-feedback">Subject Required</div>
                     </div>
                     <div class="phone error">
-                        <input type="number" id="phone" name="Phone Number" placeholder="Phone Number" required minlength="10">
+                        <input type="number" id="phone" name="Phone Number" placeholder="Phone Number" required
+                            minlength="10">
                         <div class="invalid-feedback">Phone Number Invalid</div>
                         <div class="empty-feedback">Phone Number Required</div>
                     </div>
@@ -117,7 +111,8 @@
                     </div>
                     <div class="customerStatus error">
                         <div class="optionOne">
-                            <input type="radio" id="existingPatient" value="Existing Patient" name="New or Existing" required>
+                            <input type="radio" id="existingPatient" value="Existing Patient" name="New or Existing"
+                                required>
                             <label for="existingPatient">Existing Patient</label>
                         </div>
                         <div class="optionTwo">
@@ -132,10 +127,34 @@
                 </form>
             </div>
         </div>
+        <div class="smallSect">
+            <div class="smallAddress">
+                <img src="./images/locationIcon.png">
+                <a href="https://www.google.com/maps/dir//3751+Matlock+Rd+%23115,+Arlington,+TX+76015/@32.6831472,-97.1968039,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x864e62b87f9691ff:0xad3b7b87c87afb1d!2m2!1d-97.1144539!2d32.6831742?entry=ttu"
+                    target="_blank" rel="noopener noreferrer">
+                    3751 Matlock Rd. #115, Arlington, TX 76015
+                </a>
+            </div>
+            <p class="smallLine">|</p>
+            <div class="smallPhone">
+                <img src="./images/phoneIcon.png">
+                <a href="tel:+8173759000">(817) 375-9000</a>
+            </div>
+        </div>
     </main>
     <footer>
-        <div class="footer">Website Made By:&nbsp;<a href="https://www.linkedin.com/in/vdangcs/" target="_blank"
-                rel="noopener noreferrer">Vincent Dang</a>
+        <div class="footer">
+            <div class="footerSect">Website Made By:
+                <a href="https://www.linkedin.com/in/vdangcs/" target="_blank" rel="noopener noreferrer">
+                    Vincent Dang
+                </a>
+            </div>
+            <div class="footerSect">|</div>
+            <div class="footerSect">
+                <a href="./privacy-policy.html">
+                    Privacy Policy
+                </a>
+            </div>
         </div>
     </footer>
     <script src="script.js"></script>

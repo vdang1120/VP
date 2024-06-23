@@ -19,7 +19,7 @@
                     const object = Object.fromEntries(formData);
                     const json = JSON.stringify(object);
 
-                    fetch("https://api.web3forms.com/subrrmit", {
+                    fetch("https://api.web3forms.com/submit", {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json",

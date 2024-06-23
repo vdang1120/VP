@@ -1,0 +1,20 @@
+.subSect > ul > li {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+
+.subSect > ul > li > a {
+    color: black;
+}
+
+#secondList li {
+    margin-left: 2%;
+    font-size: 20px;
+    color: black;
+    margin-top:10px;
+}
+
+#secondList li a {
+    color: black;
+}
