@@ -208,6 +208,7 @@ nav ul li a:hover {
     cursor: pointer;
     padding: 10px;
     border-radius: 100px;
+    transition: .1s;
 }
 
 #myBtn img {
@@ -215,7 +216,11 @@ nav ul li a:hover {
 }
   
 #myBtn:hover {
-    background-color: rgb(45, 135, 85);
+    padding: 12px;
+}
+
+#myBtn:active {
+    padding: 10px;
 }
 
 .smallSect {
