@@ -2,8 +2,14 @@ header {
     box-shadow: 0px -10px 20px black;
 }
 
+main {
+    background: url(./images/whitebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .sect1 {
-    height: 570px;
+    height: 575px;
     display: flex;
     align-items: center;
     top: 0;
@@ -12,7 +18,6 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    z-index: -9;
     position: relative;
 }
 
@@ -24,7 +29,6 @@ header {
     width: 100%;
     height: 100%;
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 33%, rgba(255, 255, 255, 0.863) 54%, rgba(255, 255, 255, 0) 75%, rgba(255,255,255,0) 100%);
-    z-index: -1;
     pointer-events: none;
 }
 
@@ -55,18 +59,15 @@ header {
     margin-top: 100px;
 }
 
-.sect2 {
+.sectInfo {
     padding-bottom: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(./images/whitebg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-.sect2 h2 {
+.sectInfo h2 {
     margin: 50px;
 }
 
@@ -81,6 +82,7 @@ header {
 iframe, .storeHours {
     border: solid mediumseagreen;
     border-radius: 8px;
+    box-shadow: 0px 0px 20px -10px;
 }
 
 .storeHours {
@@ -126,7 +128,7 @@ iframe, .storeHours {
     padding: 20px;
 }
 
-.top h2, #sect4top, .sect2 h2 {
+.top h2, #sect4top, .sectInfo h2 {
     font-size: 40px;
 }
 
@@ -164,17 +166,19 @@ iframe, .storeHours {
     align-items: center;
 }
 
-.pic a, .sect4 a{
+.pic a, .sectInsurance a{
     cursor: default;
     text-decoration: none;
 }
 
-.pic button, .sect4 button {
+.pic button, .sectInsurance button {
     cursor: pointer;
+    background-color: white;
 }
 
-.pic button h2, .sect4 button h2 {
+.pic button h2, .sectInsurance button h2 {
     font-weight: 500;
+    color: black;
 }
 
 .buttonText {
@@ -192,12 +196,12 @@ iframe, .storeHours {
     transition: .2s;
 }
 
-.pic button:hover .arrow, .sect4 button:hover .arrow{
+.pic button:hover .arrow, .sectInsurance button:hover .arrow{
     left: 5px;
     opacity: 1;
 }
 
-.pic button:hover .buttonText, .sect4 button:hover .buttonText{
+.pic button:hover .buttonText, .sectInsurance button:hover .buttonText{
     left: 0px;
 }
 
@@ -209,27 +213,54 @@ iframe, .storeHours {
     background-size: cover;
 }
 
-.sect4 {
+.sectInsurance {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 50px;
     gap: 25px;
-    background: url(./images/whitebg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-.sect4 p {
+.sectInsurance p {
     font-size: 24px;
 }
 
-.sect4 button {
+.sectInsurance button {
     border: 2px solid mediumseagreen;
     border-radius: 30px;
     padding: 6px 12px;
     display: flex;
     align-items: center;
+}
+
+.sectMisc {
+    background-color: rgba(255, 255, 255, 0.5);
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left, .right {
+    flex: 1;
+    padding: 5%;
+}
+
+.sectMisc img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    border: solid mediumseagreen;
+    box-shadow: 0px 0px 20px -10px;
+}
+
+.right h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.right p {
+    font-size: 24px;
 }
 
 @media (max-width: 1100px) {
@@ -241,6 +272,14 @@ iframe, .storeHours {
     }
     #textBoxSub p {
         font-size: 25px;
+    }
+}
+@media (max-width: 1100px) {
+    .sectMisc {
+        flex-direction: column;
+    }
+    .left {
+        padding-bottom: 0;
     }
 }
 @media (max-width: 850px) {

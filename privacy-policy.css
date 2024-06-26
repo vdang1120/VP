@@ -6,4 +6,7 @@
     gap: 20px;
     padding: 5%;
     padding-left: 10%;
+    background: url(./images/whitebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }

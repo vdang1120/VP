@@ -28,11 +28,11 @@
                 <li><a href="./aboutus.html">About Us</a></li>
                 <li><a href="./insurance.html">Insurance</a></li>
                 <li id="products">
-                    <a href="#" onclick="return false;">Products</a>
+                    <a href="./products.html">Products</a>
                     <ul class="dropdownProducts">
-                        <li><a href="#">Eyeglasses</a></li>
-                        <li><a href="#">Sunglasses</a></li>
-                        <li><a href="#">Contact Lenses</a></li>
+                        <li><a href="#" onclick="return false;">Eyeglasses</a></li>
+                        <li><a href="#" onclick="return false;">Sunglasses</a></li>
+                        <li><a href="#" onclick="return false;">Contact Lenses</a></li>
                     </ul>
                 </li>
             </ul>
@@ -60,10 +60,10 @@
             <p class="smallLine">|</p>
             <div class="smallPhone">
                 <img src="./images/phoneIcon.png">
-                <a href="tel:+8173759000">(817) 375-9000</a>
+                <a href="tel:817-375-9000">(817) 375-9000</a>
             </div>
         </div>
-        <div class="sect2">
+        <div class="sectInfo">
             <h2>Store Information</h2>
             <div class="addressFlexBox">
                 <iframe
@@ -95,16 +95,28 @@
                 </div>
             </div>
         </div>
-        <div class="sect3">
+        <div class="sectMisc misc1">
+            <div class="left">
+                <img src="./images/doctor.jpg">
+            </div>
+            <div class="right">
+                <h2>Subheading Subheading Subheading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non unde laborum debitis totam quaerat
+                    optio fugiat reiciendis doloremque tenetur, voluptatibus aut sunt saepe, deleniti commodi dolorem
+                    quisquam laudantium harum! Pariatur!</p>
+            </div>
+        </div>
+        <div class="sectProducts">
             <div class="top">
                 <h2>View Our</h2>
-                <a href="#"><button>
+                <a href="./products.html">
+                    <button>
                         <h2>Product Catalogue</h2>
                     </button></a>
             </div>
             <div id="sect3pics">
                 <div class="pic" id="pic1">
-                    <a href="#">
+                    <a href="./products.html">
                         <button>
                             <h2 class="buttonText">VIEW EYEGLASSES</h2>
                             <h2 class="arrow">➤</h2>
@@ -112,7 +124,7 @@
                     </a>
                 </div>
                 <div class="pic" id="pic2">
-                    <a href="#">
+                    <a href="./products.html">
                         <button>
                             <h2 class="buttonText">VIEW SUNGLASSES</h2>
                             <h2 class="arrow">➤</h2>
@@ -120,7 +132,7 @@
                     </a>
                 </div>
                 <div class="pic" id="pic3">
-                    <a href="#">
+                    <a href="./products.html">
                         <button>
                             <h2 class="buttonText">VIEW CONTACT LENSES</h2>
                             <h2 class="arrow">➤</h2>
@@ -129,7 +141,7 @@
                 </div>
             </div>
         </div>
-        <div class="sect4">
+        <div class="sectInsurance">
             <h2 id="sect4top">Insurance</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quia fugit saepe fuga earum dolorum
@@ -143,6 +155,17 @@
                 </button>
             </a>
         </div>
+        <div class="sectMisc misc2">
+            <div class="left">
+                <img src="./images/doctor.jpg">
+            </div>
+            <div class="right">
+                <h2>Subheading Subheading Subheading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non unde laborum debitis totam quaerat
+                    optio fugiat reiciendis doloremque tenetur, voluptatibus aut sunt saepe, deleniti commodi dolorem
+                    quisquam laudantium harum! Pariatur!</p>
+            </div>
+        </div>
         <div class="smallSect">
             <div class="smallAddress">
                 <img src="./images/locationIcon.png">
@@ -154,9 +177,12 @@
             <p class="smallLine">|</p>
             <div class="smallPhone">
                 <img src="./images/phoneIcon.png">
-                <a href="tel:+8173759000">(817) 375-9000</a>
+                <a href="tel:817-375-9000">(817) 375-9000</a>
             </div>
         </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <img src="./images/uparrow.png">
+        </button>
     </main>
     <footer>
         <div class="footer">
@@ -173,6 +199,7 @@
             </div>
         </div>
     </footer>
+    <script src="scrollbutton.js"></script>
 </body>
 
 </html>

@@ -17,12 +17,16 @@
 
 .bottom {
     display: flex;
+    background: url(./images/whitebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .left,
 .right {
     flex: 1;
     padding: 3%;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .left {
