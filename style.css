@@ -8,6 +8,24 @@ main {
     background-size: cover;
 }
 
+#construction {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#construction h1 {
+    font-size: 60px;
+}
+
+#construction h3 {
+    font-size: 40px;
+}
+
 .sect1 {
     height: 575px;
     display: flex;
