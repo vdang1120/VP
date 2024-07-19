@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Vision Palace</title>
+    <meta name="author" content="Vincent Dang">
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="stylesheet" href="headerfooter.css">
+    <link rel="icon" href="./images/logoicon.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="sidebarActive">
+            <label for="sidebarActive" id="open">
+                <img src="./images/open.png" class="openImg">
+            </label>
+
+            <label for="sidebarActive" id="overlay"></label>
+
+            <a id="logoBox" href="index.html"><img class="logo" title="Vision Palace" src="./images/logo.png"
+                    alt="Vision Palace Logo"></a>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutus.html" class="current">About Us</a></li>
+                <li><a href="./insurance.html">Insurance</a></li>
+                <li id="products">
+                    <a href="./products.html">Products</a>
+                    <ul class="dropdownProducts">
+                        <li><a href="#" onclick="return false;">Eyeglasses</a></li>
+                        <li><a href="#" onclick="return false;">Sunglasses</a></li>
+                        <li><a href="#" onclick="return false;">Contact Lenses</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a class="contactButton" href="./contact.html"><button>CONTACT US</button></a>
+        </nav>
+    </header>
+    <main>
+        <div id="topBar">
+            <p>
+                <a href="./index.html">Home</a> / <a href="aboutus.html">About Us</a>
+            </p>
+        </div>
+        <div class="top">
+            <h2>About Vision Palace</h2>
+        </div>
+        <div class="sect1 section">
+            <div class="left">
+                <h2>Our Practice</h2>
+                <p>Vision Palace is a private, family owned optometry practice. Since 2012, we have been committed to providing top-quality eyecare service to all patients. In addition, we offer a wide variety of eyeglasses, sunglasses, and contact lenses. We are dedicated to ensuring a positive and comfortable experience for every guest that visits us.</p>
+            </div>
+            <div class="right">
+                <img src="./images/opto.jpg">
+            </div>
+        </div>
+        <div class="title">
+            <h2>Meet Our Doctor</h2>
+        </div>
+        <div class="sect2 section">
+            <div class="left">
+                <img src="./images/eye-doctor.jpg">
+            </div>
+            <div class="right">
+                <h2>Dr. Ly Phan, OD</h2>
+                <p>Dr. Ly Phan is a trained and qualified optometrist who is dedicated to delivering quality eyecare to
+                    all of his patients. He received his Doctor of Optometry from the University of Houston in 2007. As a therapeutic optometrist, Dr. Phan prioritzes the health and wellness of
+                    each patient's eyes.</p>
+            </div>
+        </div>
+        <div class="smallSect">
+            <div class="smallAddress">
+                <img src="./images/locationIcon.png">
+                <a href="https://www.google.com/maps/dir//3751+Matlock+Rd+%23115,+Arlington,+TX+76015/@32.6831472,-97.1968039,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x864e62b87f9691ff:0xad3b7b87c87afb1d!2m2!1d-97.1144539!2d32.6831742?entry=ttu"
+                    target="_blank" rel="noopener noreferrer">
+                    3751 Matlock Rd. #115, Arlington, TX 76015
+                </a>
+            </div>
+            <p class="smallLine">|</p>
+            <div class="smallPhone">
+                <img src="./images/phoneIcon.png">
+                <a href="tel:817-375-9000">(817) 375-9000</a>
+            </div>
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <img src="./images/uparrow.png">
+        </button>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footerSect">Website Made By:
+                <a href="https://www.linkedin.com/in/vdangcs/" target="_blank" rel="noopener noreferrer">
+                    Vincent Dang
+                </a>
+            </div>
+            <div class="footerSect">|</div>
+            <div class="footerSect">
+                <a href="./privacy-policy.html">
+                    Privacy Policy
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="scrollbutton.js"></script>
+</body>
+
+</html>

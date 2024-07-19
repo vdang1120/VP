@@ -1,0 +1,275 @@
+.contactButton button {
+    color: white;
+    background-color: mediumseagreen;
+}
+
+.top {
+    font-size: 32px;
+    padding: 40px;
+    border-bottom: 1px solid lightgrey;
+    background-color: mediumseagreen;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 10%;
+}
+
+.bottom {
+    display: flex;
+    background: url(./images/whitebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left,
+.right {
+    flex: 1;
+    padding: 3%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.left {
+    border-right: 1px solid lightgrey;
+    display: flex;
+    flex-direction: column;
+}
+
+.right p,
+.left p {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 8%;
+}
+
+.mainlistContainer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.mainList {
+    list-style: none;
+}
+
+.mainListBox {
+    margin-bottom: 36px;
+}
+
+.mainList img {
+    width: 5%;
+    margin-right: 4%;
+}
+
+.mainListItem {
+    display: flex;
+    align-items: center;
+}
+
+.mainListText {
+    font-size: larger;
+}
+
+.notMainList {
+    margin-top: 18px;
+    margin-left: 18px;
+}
+
+.error {
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    background-color: transparent;
+    width: 100%;
+    padding: 4px;
+    border: 1px solid #ccc;
+    transition: .05s;
+}
+
+input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+textarea {
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: 0px;
+    border-bottom: 1px solid black;
+}
+
+textarea:focus {
+    outline: 0px;
+    border: 1px solid black;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first,
+.last {
+    flex: 1;
+}
+
+.first {
+    margin-right: 10px;
+}
+
+main textarea {
+    height: 120px;
+    max-width: 100%;
+    resize: vertical;
+}
+
+.customerStatus {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.optionOne,
+.optionTwo {
+    display: flex;
+    align-items: center;
+}
+
+.customerStatus input {
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.customerStatus input::after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: lightgray;
+    margin-right: 10px;
+}
+
+.customerStatus input:checked::after {
+    background-color: mediumseagreen;
+}
+
+.customerStatus input,
+.customerStatus label {
+    cursor: pointer;
+}
+
+form button {
+    font-size: 24px;
+    font-weight: 600;
+    border: 3px solid mediumseagreen;
+    border-radius: 8px;
+    color: mediumseagreen;
+    background-color: transparent;
+    transition: .3s;
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+form button:hover {
+    background-color: mediumseagreen;
+    color: white;
+    cursor: pointer;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.invalid-feedback,
+.empty-feedback {
+    display: none;
+    color: red;
+    margin-left: 4px;
+    font-size: 13px;
+}
+
+.was-validated :placeholder-shown:invalid~.empty-feedback {
+    display: block;
+}
+
+.was-validated :not(:placeholder-shown):invalid~.invalid-feedback {
+    display: block;
+}
+
+.was-validated .customerStatus input:invalid ~ .empty-feedback {
+    display: block;
+    position: relative;
+    right: 95px;
+    top: 28px;
+}
+
+.was-validated .customerStatus input:invalid ~ .empty-feedback {
+    display: block;
+    position: relative;
+    right: 80px;
+    top: 28px;
+}
+
+.was-validated .customerStatus:has(input:invalid) {
+    margin-bottom: 50px;
+}
+
+.is-invalid,
+.was-validated :invalid {
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.is-invalid,
+.was-validated .customerStatus input {
+    border: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+@media (max-width: 800px) {
+    .name {
+        flex-direction: column;
+    }
+
+    .name .first,
+    .name .last {
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 600px) {
+    .bottom {
+        flex-direction: column;
+    }
+    .left {
+        border-right: none;
+        border-bottom: 1px solid lightgray;
+    }
+}
