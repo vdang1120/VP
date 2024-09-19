@@ -332,7 +332,14 @@ iframe, .storeHours {
         border: 10px solid white;
         border-bottom: none;
     }
+    #pic1 {
+        background-image: url('./images/vppic3-2-2.jpg');
+    }
+    #pic2 {
+        background-image: url('./images/vppic4-2.jpg');
+    }
     #pic3 {
+        background-image: url('./images/vppic5-2.jpeg');
         border-bottom: 10px solid white;
     }
 }
